@@ -1,4 +1,6 @@
 ** FEATURES **
+===============
+
 FR1: Users Registration:
 •Account Types: Different account types for service centers, car owners, and potential buyers.
 FR2: Service Center Registration and Management:
@@ -48,6 +50,8 @@ FR11: Recommendation system:
 --------------------------------------------------------------------------------------------------------
 
 ** IMPLMENTAION ** 
+===================
+
 The development of this project was carried out using a combination of front-end and back-end technologies to ensure a responsive, functional, and interactive web application. The implementation environment includes the following technologies:
 HTML5: Used for structuring the content and layout of the web pages.
 CSS3: Applied for styling and visual design to ensure a consistent and appealing user interface.
