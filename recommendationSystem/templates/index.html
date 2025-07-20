@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Recommendation System</title>
+  <link rel="stylesheet" href="/static/CSS/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .dataframe {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    .dataframe th, .dataframe td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .dataframe th {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body class="bg-body-secondary">
+  <div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">🚗 Car Recommendation System</h2>
+    <form method="POST">
+      <div class="row">
+        <div class="col-md-6"> -->
+          <!-- Budget -->
+          <!-- <div class="form-group mb-3">
+            <label for="budget">Your car budget:</label>
+            <select id="budget" name="budget" class="form-control" required>
+              <option value="750000">500,000 - 1,000,000</option>
+              <option value="1750000">1,500,000 - 2,000,000</option>
+              <option value="2500000">2,000,000+</option>
+            </select>
+          </div> -->
+
+          <!-- Fuel Type -->
+          <!-- <div class="form-group mb-3">
+            <label for="fuel_type">Preferred fuel type:</label>
+            <select id="fuel_type" name="fuel_type" class="form-control" required>
+              <option value="Diesel">Diesel</option>
+              <option value="Gasoline">Gasoline</option>
+              <option value="Electricity">Electricity</option>
+              <option value="Natural gas">Natural gas</option>
+            </select>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-md-6"> -->
+          <!-- Transmission -->
+          <!-- <div class="form-group mb-3">
+            <label for="transmission">Transmission:</label>
+            <select id="transmission" name="transmission" class="form-control" required>
+              <option value="Automatic">Automatic</option>
+              <option value="Manual">Manual</option>
+            </select>
+          </div> -->
+
+          <!-- Year (optional) -->
+          <!-- <div class="form-group mb-3">
+            <label for="year">Preferred year (optional):</label>
+            <input type="text" id="year" name="year" class="form-control" placeholder="e.g., 2020" />
+          </div>
+        </div>
+      </div> -->
+<!-- 
+      <div class="text-center mt-4">
+        <input type="submit" value="Get Recommendations" class="btn btn-primary px-5 py-2" />
+      </div>
+    </form> -->
+
+    <!-- Display Results -->
+    <!-- {% if tables %}
+      <h4 class="mt-5 text-success">✅ Top Recommendations:</h4>
+      {{ tables[0]|safe }}
+    {% elif error %}
+      <div class="alert alert-danger mt-4">{{ error }}</div>
+    {% endif %}
+  </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Recommendation</title>
+    <style>
+        .data {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .data th, .data td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Recommendation System</h1>
+    <form method="post">
+        <label for="budget">Enter your budget:</label>
+        <input type="number" id="budget" name="budget" required><br><br>
+
+        <label for="fuel_type">Preferred fuel type(e.g., Petrol, Diesel, Electric):</label>
+        <input type="text" id="fuel_type" name="fuel_type" required><br><br>
+
+        <label for="transmission">Preferred transmission(e.g., Manual, Automatic):</label>
+        <input type="text" id="transmission" name="transmission" required><br><br>
+
+        <label for="year">Preferred year of manufacture (optional):</label>
+        <input type="text" id="year" name="year"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if tables %}
+        <h2>Top 6 Recommended Cars:</h2>
+        {{ tables|safe }}
+    {% endif %}
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html> 
